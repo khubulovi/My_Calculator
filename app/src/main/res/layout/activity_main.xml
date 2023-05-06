@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/result"
+        android:textSize="40pt"
+        android:background="@color/grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:ems="10"
+        android:gravity="right|center"
+        android:text="@string/resulttext"
+        tools:ignore="RtlHardcoded"
+        />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/delete"
+                android:text="@string/delete"
+                android:onClick="delete"
+                android:backgroundTint="@color/purple_200"
+                android:height="30dp"
+                android:width="30dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="1pt"
+                tools:ignore="UsingOnClickInXml" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/positiv_unpositiv"
+                android:text="@string/plus_minus"
+                android:onClick="clickNumber"
+                android:height="30dp"
+                android:width="30dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="1pt"
+                android:backgroundTint="@color/purple_200"
+                tools:ignore="UsingOnClickInXml" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/devide"
+                android:text="@string/divide"
+                android:onClick="operations"
+                android:height="30dp"
+                android:width="30dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="1pt"
+                android:backgroundTint="@color/purple_200"
+                tools:ignore="UsingOnClickInXml" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/multiply"
+                android:text="@string/multiply"
+                android:onClick="operations"
+                android:height="30dp"
+                android:width="30dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="1pt"
+                android:backgroundTint="@color/purple_200"
+                tools:ignore="UsingOnClickInXml" />
+            </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button7"
+            android:text="@string/button7"
+            android:onClick="clickNumber"
+            android:height="30dp"
+            android:width="30dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="1pt"
+            tools:ignore="UsingOnClickInXml" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button8"
+            android:text="@string/button8"
+            android:onClick="clickNumber"
+            android:height="30dp"
+            android:width="30dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="1pt"
+            tools:ignore="UsingOnClickInXml" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button9"
+            android:text="@string/button9"
+            android:onClick="clickNumber"
+            android:height="30dp"
+            android:width="30dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="1pt"
+            tools:ignore="UsingOnClickInXml" />
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/procents"
+            android:text="@string/procents"
+            android:onClick="procents"
+            android:height="30dp"
+            android:width="30dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="1pt"
+            android:backgroundTint="@color/purple_200"
+            tools:ignore="UsingOnClickInXml" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button4"
+                android:text="@string/button4"
+                android:onClick="clickNumber"
+                android:height="30dp"
+                android:width="30dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="1pt"
+                tools:ignore="UsingOnClickInXml" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button5"
+                android:text="@string/button5"
+                android:onClick="clickNumber"
+                android:height="30dp"
+                android:width="30dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="1pt"
+                tools:ignore="UsingOnClickInXml" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button6"
+                android:text="@string/button6"
+                android:onClick="clickNumber"
+                android:height="30dp"
+                android:width="30dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="1pt"
+                tools:ignore="UsingOnClickInXml" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/minus"
+                android:text="@string/minus"
+                android:onClick="operations"
+                android:height="30dp"
+                android:width="30dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="1pt"
+                android:backgroundTint="@color/purple_200"
+                tools:ignore="UsingOnClickInXml" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button1"
+                android:text="@string/button1"
+                android:onClick="clickNumber"
+                android:height="30dp"
+                android:width="30dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="1pt"
+                tools:ignore="UsingOnClickInXml" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button2"
+                android:text="@string/button2"
+                android:onClick="clickNumber"
+                android:height="30dp"
+                android:width="30dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="1pt"
+                tools:ignore="UsingOnClickInXml" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button3"
+                android:text="@string/button3"
+                android:onClick="clickNumber"
+                android:height="30dp"
+                android:width="30dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="1pt"
+                tools:ignore="UsingOnClickInXml" />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/plus"
+                android:text="@string/plus"
+                android:onClick="operations"
+                android:height="30dp"
+                android:width="30dp"
+                android:layout_weight="1"
+                android:layout_marginEnd="1pt"
+                android:backgroundTint="@color/purple_200"
+                tools:ignore="UsingOnClickInXml" />
+
+        </TableRow>
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button0"
+                android:layout_marginEnd="1pt"
+                android:layout_weight="1"
+                android:width="30dp"
+                android:height="30dp"
+                android:onClick="clickNumber"
+                android:text="@string/button0"
+                tools:ignore="UsingOnClickInXml" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/button"
+                android:layout_marginEnd="1pt"
+                android:layout_weight="1"
+                android:width="30dp"
+                android:height="30dp"
+                android:onClick="clickNumber"
+                android:text="@string/button"
+                tools:ignore="UsingOnClickInXml" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/equals"
+                android:layout_marginEnd="1pt"
+                android:layout_weight="1"
+                android:width="30dp"
+                android:height="30dp"
+                android:onClick="equels"
+                android:text="@string/equals"
+                tools:ignore="UsingOnClickInXml" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/settings"
+                android:layout_marginEnd="1pt"
+                android:layout_weight="@integer/material_motion_duration_long_2"
+                android:width="30dp"
+                android:height="30dp"
+                android:backgroundTint="@color/purple_200"
+                android:text="@string/settings" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>

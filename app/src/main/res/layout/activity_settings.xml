@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Settings">
+
+
+        <RadioButton
+            android:id="@+id/nightTheme"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@color/black"
+            android:text="@string/nightTheme"
+            android:textColor="@color/white" />
+
+        <RadioButton
+            android:id="@+id/nightThemeOff"
+            android:layout_width="170dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:background="@color/purple_200"
+            android:text="@string/offnightTheme"
+            android:textColor="@color/white" />
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="1pt"
+            android:backgroundTint="@color/mycolor"
+            android:text="@string/back"
+            android:textSize="20sp" />
+
+
+</LinearLayout>
