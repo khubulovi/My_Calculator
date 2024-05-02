@@ -162,7 +162,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private boolean isZero(String number) {
-        return number.equals("0") || number.equals("");
+        return number.equals("0") || number.isEmpty();
     }
 
     @SuppressLint("NonConstantResourceId")
@@ -225,7 +225,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onRestoreInstanceState(Bundle saveInstanceState) {
+    protected void onRestoreInstanceState(@NonNull Bundle saveInstanceState) {
         super.onRestoreInstanceState(saveInstanceState);
         result.setText(saveInstanceState.getString(KEY_EQUALS));
         makeToast("RestoreIstanceState");
