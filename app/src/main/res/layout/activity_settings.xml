@@ -23,7 +23,7 @@
             android:layout_weight="0"
             android:background="@color/purple_200"
             android:text="@string/offnightTheme"
-            android:textColor="@color/white" />
+            android:textColor="#311B92" />
 
 
         <com.google.android.material.button.MaterialButton
