@@ -1,9 +1,9 @@
 package com.example.mycalculator;
 
 
-/**
- *
- * @author Maxo Khubulovi
+/*
+
+  @author Maxo Khubulovi
  * @version dated May 6, 2023
  */
 
